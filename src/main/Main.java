@@ -82,11 +82,11 @@ public class Main {
                 Vector3D tmp = vr.vectorSum(vector, anotherVector);
                 System.out.println("Cумма векторов равна: " );
                 tmp.vectorPrint();
-                System.out.println("Cкалярное произведение векторов равно: " + vr.vectorScalarProduction(vector, anotherVector));
-                tmp = vr.vectorProduction(vector, anotherVector);
+                System.out.println("Cкалярное произведение векторов равно: " + vr.vectorScalarMultiplication(vector, anotherVector));
+                tmp = vr.vectorMultiplication(vector, anotherVector);
                 System.out.println("Векторное произведение векторов равно: ");
                 tmp.vectorPrint();
-                if (vr.vectorCheckCollinerity(vector, anotherVector) == true){
+                if (vr.vectorCheckCollinearity(vector, anotherVector) == true){
                     System.out.println("Заданные вектора коллинеарны.");
                 }else{
                     System.out.println("Заданные вектора неколлинеарны.");
